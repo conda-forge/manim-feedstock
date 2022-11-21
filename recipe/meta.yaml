@@ -15,7 +15,7 @@ build:
     - manim = manim.__main__:main
     - manimce = manim.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -31,7 +31,7 @@ requirements:
     - decorator >=5.0.7,<6.0.0
     - isosurfaces ==0.1.0
     - manimpango >=0.4.0.post0,<0.5.0
-    - mapbox_earcut >=0.12.10,<0.13.0
+    - mapbox_earcut >=0.12.10,<=1.0.0
     - moderngl >=5.6.3,<6.0.0
     - moderngl-window >=2.3.0,<3.0.0
     - networkx >=2.5,<3.0
