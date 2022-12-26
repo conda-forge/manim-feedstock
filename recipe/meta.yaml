@@ -1,5 +1,5 @@
 {% set name = "manim" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/manim-{{ version }}.tar.gz
-  sha256: ee939c11fda86d34c9ec4bfd3faf71ea7ebe1758e94833d802de4909b748a5c1
+  sha256: cb9b6f8b27c07994b929f2ab1943a3f5a6767816391744bb0f64f998dd99ecfe
 
 build:
   noarch: python
