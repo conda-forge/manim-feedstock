@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/manim-{{ version }}.tar.gz
   sha256: 56788066bc1aec2471a988c91e337194fd38d1035ed1b4d10838bfe64bd26af8
+  patches:
+    - skia-pathops-version.patch
 
 build:
   noarch: python
@@ -44,7 +46,7 @@ requirements:
     - rich >=6.0,!=12.0.0
     - scipy >=1.7.3,<2.0.0
     - screeninfo >=0.8.0,<0.9.0
-    - skia-pathops >=0.8.0.post1,<0.9.0
+    - skia-pathops >=0.7.0
     - srt >=3.5.0,<4.0.0
     - svgelements >=1.8.0,<2.0.0
     - tqdm >=4.62.3,<5.0.0
