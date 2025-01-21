@@ -3,11 +3,13 @@ About manim-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/manim-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.manim.community/
+Home: https://manim.community/
 
 Package license: MIT
 
 Summary: Animation engine for explanatory math videos.
+
+Development: https://github.com/ManimCommunity/manim
 
 Current build status
 ====================
