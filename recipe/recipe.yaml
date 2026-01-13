@@ -1,6 +1,7 @@
 context:
   name: manim
   version: 0.19.1
+  python_min: 3.11
 
 package:
   name: ${{ name|lower }}
@@ -23,8 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - poetry >=1.0.10
-    - poetry-core
+    - hatchling
   run:
     - python >=${{ python_min }}
     - av >=9.0.0,<14.0.0
