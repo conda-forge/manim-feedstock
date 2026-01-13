@@ -1,6 +1,6 @@
 context:
   name: manim
-  version: 0.19.0
+  version: 0.19.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 748115ffc1dea24940fd6d7a3edcae0ccedc3e1874ebc1f5d7e5c6d69a4f4505
+  sha256: 6be7da7e973b212739d2fbfe6af4501068b8a63fdd9407660a609ae12e57b580
 
 build:
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - moderngl >=5.0.0,<6.0.0
     - moderngl-window >=2.0.0
     - networkx >=2.6
-    - numpy >=2.0
+    - numpy >=2.1
     - pillow >=9.1
     - pycairo >=1.13,<2.0.0
     - pydub >=0.20.0
