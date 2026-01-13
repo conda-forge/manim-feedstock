@@ -60,7 +60,7 @@ tests:
       pip_check: true
       imports:
         - manim
-      python_version: ${{ python_min }}
+      python_version: ${{ python_min }}.*
   - script:
       - manim --help
       - manimce --help
