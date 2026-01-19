@@ -1,6 +1,6 @@
 context:
   name: manim
-  version: 0.19.1
+  version: "0.19.2"
   python_min: 3.11
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 6be7da7e973b212739d2fbfe6af4501068b8a63fdd9407660a609ae12e57b580
+  sha256: 7cf74d7c012f19e278fcff58651e5b486a23391aa115582a24c6a0e318cd243e
 
 build:
   noarch: python
