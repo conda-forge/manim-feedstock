@@ -1,7 +1,7 @@
 context:
   name: manim
-  version: 0.20.1
-  python_min: "3.11"
+  version: 0.22.0
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 1e9747fb2fc1bde58ad09bcbd77d141793ce4b61811726a7fce537193d92e16b
+  sha256: e227aef6dab218c7fe68fa31ed1ff418e1c86a450f43509ed2630f3ffd06602d
 
 build:
   noarch: python
@@ -30,9 +30,9 @@ requirements:
     - av >=15.0
     - click >=8.0
     - cloup >=2.0.0
-    - decorator >=4.3.2
+    - decorator >=5.1.0
     - isosurfaces >=0.1.1
-    - manimpango >=0.6.1,<1.0.0
+    - manimpango >=0.7.0,<1.0.0
     - mapbox_earcut >=1.0.0
     - moderngl >=5.7.0,<6.0.0
     - moderngl-window >=2.0.0
@@ -53,7 +53,6 @@ requirements:
     - watchdog >=2.0.0
     - audioop-lts >=0.2.1
     - typing_extensions >=4.12.0
-    - ffmpeg
 tests:
   - python:
       pip_check: true
