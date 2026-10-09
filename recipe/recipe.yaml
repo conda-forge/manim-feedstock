@@ -1,14 +1,12 @@
 context:
-  name: manim
   version: 0.22.0
-  python_min: '3.11'
 
 package:
-  name: ${{ name|lower }}
+  name: manim
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/manim/manim-${{ version }}.tar.gz
   sha256: e227aef6dab218c7fe68fa31ed1ff418e1c86a450f43509ed2630f3ffd06602d
 
 build:
@@ -24,18 +22,20 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - hatchling
+    - uv-build >=0.12.1,<0.13.0
   run:
     - python >=${{ python_min }}
+    - audioop-lts >=0.2.1
     - av >=15.0
+    - beautifulsoup4 >=4.12
     - click >=8.0
     - cloup >=2.0.0
     - decorator >=5.1.0
     - isosurfaces >=0.1.1
     - manimpango >=0.7.0,<1.0.0
     - mapbox_earcut >=1.0.0
-    - moderngl >=5.7.0,<6.0.0
     - moderngl-window >=2.0.0
+    - moderngl >=5.7.0,<6.0.0
     - networkx >=2.6
     - numpy >=2.1
     - pillow >=11.0
@@ -49,10 +49,17 @@ requirements:
     - srt >=3.0.0
     - svgelements >=1.9.0
     - tqdm >=4.21.0
-    - beautifulsoup4 >=4.12
-    - watchdog >=2.0.0
-    - audioop-lts >=0.2.1
     - typing_extensions >=4.12.0
+    - watchdog >=2.0.0
+    - ffmpeg
+  extras:
+    gui:
+      - dearpygui >=1.0.0
+    jupyterlab:
+      - jupyterlab >=4.3.4
+      - notebook >=7.3.2
+    typst:
+      - typst-py >=0.14
 tests:
   - python:
       pip_check: true
