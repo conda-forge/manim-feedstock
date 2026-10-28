@@ -1,5 +1,5 @@
 context:
-  version: 0.22.0
+  version: 0.22.1
 
 package:
   name: manim
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/manim/manim-${{ version }}.tar.gz
-  sha256: e227aef6dab218c7fe68fa31ed1ff418e1c86a450f43509ed2630f3ffd06602d
+  sha256: 3245bb52f4dfaa6e74e91a765e38fcaeea7f3923fdef056c6424e173d30dfbc8
 
 build:
   noarch: python
@@ -51,7 +51,6 @@ requirements:
     - tqdm >=4.21.0
     - typing_extensions >=4.12.0
     - watchdog >=2.0.0
-    - ffmpeg
   extras:
     gui:
       - dearpygui >=1.0.0
@@ -67,7 +66,7 @@ tests:
         - manim
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - script:
       - manim --help
       - manimce --help
